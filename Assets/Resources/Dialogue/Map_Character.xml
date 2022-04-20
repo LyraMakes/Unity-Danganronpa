@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<character-map>
+    <character id="CH-01">Yashuhiro Hagakure</character>
+    <character id="CH-02">Chihiro Fujusaki</character>
+    <character id="CH-03">Byakuya Togami</character>
+    <character id="CH-04">Celestia Ludenburg</character>
+    <character id="CH-05">Leon Kuwata</character>
+    <character id="CH-06">Toko Fukawa</character>
+    <character id="CH-07">Hifumi Yamada</character>
+    <character id="CH-08">Makoto Naegi</character>
+    <character id="CH-09">Sayaka Maizono</character>
+    <character id="CH-10">Kiyotaka Ishimaru</character>
+    <character id="CH-11">Mukuro Ikusaba</character>
+    <character id="CH-12">Sakura Ogami</character>
+    <character id="CH-13">Kyoko Kirigiri</character>
+    <character id="CH-14">Mondo Owada</character>
+    <character id="CH-15">Aoi Asahina</character>
+    <character id="CH-16">Monokuma</character>
+    <character id="CH-17">Junko Enoshima</character>
+    <character id="CH-18">???</character>
+    <character id="CH-19">Narrator</character>
+    <character id="CH-20">Do Not Display</character>
+</character-map>
