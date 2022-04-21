@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class CharacterMapping
 {
+    // global instance
+    public static CharacterMapping Instance { get; private set; }
+    
     private readonly Dictionary<string, Character> _dictionary;
 
     public CharacterMapping()
@@ -24,6 +27,8 @@ public class CharacterMapping
             string name = node.InnerText;
             _dictionary.Add(id, new Character(id, name));
         }
+        
+        Instance ??= this;
     }
     
     public Character GetCharacter(string id) => _dictionary.ContainsKey(id) ? _dictionary[id] : null;

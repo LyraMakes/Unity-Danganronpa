@@ -7,6 +7,7 @@ namespace DefaultNamespace
 {
     public class DialogueHandler : MonoBehaviour
     {
+        [SerializeField] private TrialCircleController _circleController;
         [SerializeField] private InputHandler _inputHandler;
         
         [SerializeField] private TMP_Text _nameText;
@@ -33,7 +34,7 @@ namespace DefaultNamespace
                 string text = node.InnerText;
                 bool isFocused = node.Attributes["focus"] != null;
                 
-                _lines.Enqueue(new DialogueLine(character, text, isFocused));
+                _lines.Enqueue(new DialogueLine(character, text, expression, isFocused));
             }
 
             _inputHandler.OnButtonPressed += HandleButtonPressed;
@@ -55,6 +56,7 @@ namespace DefaultNamespace
         
             DialogueLine line = _lines.Dequeue();
             _nameText.text = _characterMapping.GetCharacterName(line.Name);
+            _circleController.SetExpression(line.Name, line.Expression);
             _dialogueText.text = line.Text;
         }
         

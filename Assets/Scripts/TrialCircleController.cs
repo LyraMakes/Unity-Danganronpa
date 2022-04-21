@@ -1,37 +1,135 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TrialCircleController : MonoBehaviour
 {
-    private readonly Vector3 _position0        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position1        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position2        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position3        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position4        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position5        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position6        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position7        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position8        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position9        = new Vector3(0, 0, 0);
-    private readonly Vector3 _position10       = new Vector3(0, 0, 0);
-    private readonly Vector3 _position11       = new Vector3(0, 0, 0);
-    private readonly Vector3 _position12       = new Vector3(0, 0, 0);
-    private readonly Vector3 _position13       = new Vector3(0, 0, 0);
-    private readonly Vector3 _position14       = new Vector3(0, 0, 0);
-    private readonly Vector3 _position15       = new Vector3(0, 0, 0);
+    // Constants
+    private const float zero = 0.000f;
+    private const float four = 4.000f;
+    private const float lPos = 3.736f;
+    private const float sPos = 1.430f;
+    private const float cPos = 2.828f;
+    private const float yPos = 1.969f;
+    
+    private Vector3[] _positions;
+    private Quaternion[] _rotations;
+
+    private string[] _ids;
+    
     private readonly Vector3 _positionMonokuma = new Vector3(0, 0, 0);
     private readonly Vector3 _positionMonomi   = new Vector3(0, 0, 0);
 
+    
+    // Public Fields
+    
+    // Serialized Fields
+    [SerializeField] private GameObject trialCircleObject;
+    [SerializeField] private GameObject _characterPrefab;
+    
+    // Private Field
+    private Dictionary<string, TrialCharacterController> _characters;
+
+
+
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
+        _positions = new Vector3[]
+        {
+            new Vector3(zero, yPos, -four),
+            new Vector3(sPos, yPos, -lPos),
+            new Vector3(cPos, yPos, -cPos),
+            new Vector3(lPos, yPos, -sPos),
+            
+            new Vector3(four, yPos, zero),
+            new Vector3(lPos, yPos, sPos),
+            new Vector3(cPos, yPos, cPos),
+            new Vector3(sPos, yPos, lPos),
+            
+            new Vector3(zero, yPos, four),
+            new Vector3(-sPos, yPos, lPos),
+            new Vector3(-cPos, yPos, cPos),
+            new Vector3(-lPos, yPos, sPos),
+            
+            new Vector3(-four, yPos, zero),
+            new Vector3(-lPos, yPos, -lPos),
+            new Vector3(-cPos, yPos, -cPos),
+            new Vector3(-sPos, yPos, -sPos)
+        };
+
+
+        _rotations = new Quaternion[]
+        {
+            Quaternion.Euler(0f, 180.0f, 0f),
+            Quaternion.Euler(0f, 157.5f, 0f),
+            Quaternion.Euler(0f, 135.0f, 0f),
+            Quaternion.Euler(0f, 112.5f, 0f),
+
+            Quaternion.Euler(0f, 90.0f, 0f),
+            Quaternion.Euler(0f, 67.5f, 0f),
+            Quaternion.Euler(0f, 45.0f, 0f),
+            Quaternion.Euler(0f, 22.5f, 0f),
+
+            Quaternion.Euler(0f, 0.0f, 0f),
+            Quaternion.Euler(0f, 337.5f, 0f),
+            Quaternion.Euler(0f, 315.0f, 0f),
+            Quaternion.Euler(0f, 292.5f, 0f),
+
+            Quaternion.Euler(0f, 270.0f, 0f),
+            Quaternion.Euler(0f, 247.5f, 0f),
+            Quaternion.Euler(0f, 225.0f, 0f),
+            Quaternion.Euler(0f, 202.5f, 0f)
+        };
+
+        _ids = new[]
+        {
+            "CH-01",
+            "CH-02",
+            "CH-03",
+            "CH-04",
+            "CH-05",
+            "CH-06",
+            "CH-07",
+            "CH-08",
+            "CH-09",
+            "CH-10",
+            "CH-11",
+            "CH-12",
+            "CH-13",
+            "CH-14",
+            "CH-15",
+            "CH-16"
+
+        };
+        
+        _characters = new Dictionary<string, TrialCharacterController>();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
+        for (int i = 0; i < 16; i++)
+        {
+            GameObject instance = Instantiate(_characterPrefab, _positions[i], _rotations[i]);
+            instance.transform.parent = trialCircleObject.transform;
+            TrialCharacterController character = instance.GetComponent<TrialCharacterController>();
+            character.Initialize(_ids[i]);
+            _characters.Add(_ids[i], character);
+            
+        }
+        
         
     }
+    
+    public void AssignPosition(int index, Character ch)
+    {
+        throw new NotImplementedException();
+    }
+    
+    public void SetExpression(string id, string expression)
+    {
+        _characters[id].SetExpression(expression);
+    }
+    
 }
