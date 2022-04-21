@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dialogue>
-    <text character="CH-01" expression="thinking" focus="true">Um... So what are we doing here?</text>
-    <text character="CH-14" expression="thinking" focus="true">I don't know...</text>
-    <text character="CH-07" expression="embarrassed" focus="true">Dont worry, it's just testing for the engine!</text>
-    <text character="CH-01" expression="relieved" focus="true">Oh, phew!</text>
+    <text character="CH-02" expression="thinking" focus="true">Um... So what are we doing here?</text>
+    <text character="CH-15" expression="thinking" focus="true">I don't know...</text>
+    <text character="CH-08" expression="embarrassed" focus="true">Dont worry, it's just testing for the engine!</text>
+    <text character="CH-02" expression="relieved" focus="true">Oh, phew!</text>
 </dialogue>

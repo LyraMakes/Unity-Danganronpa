@@ -21,8 +21,8 @@ public class Character
         
     }
 
-    private string GetId() => _characterId;
-    private string GetName() => _characterName;
+    public string GetId() => _characterId;
+    public string GetName() => _characterName;
     public Sprite GetSprite(string sprite_name) => _spriteDictionary[sprite_name];
 
     

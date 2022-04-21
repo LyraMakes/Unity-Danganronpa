@@ -7,12 +7,17 @@ namespace DefaultNamespace
 {
     public class DialogueHandler : MonoBehaviour
     {
+        [SerializeField] private InputHandler _inputHandler;
+        
+        [SerializeField] private TMP_Text _nameText;
         [SerializeField] private TMP_Text _dialogueText;
-
+        
         private Queue<DialogueLine> _lines;
+        private CharacterMapping _characterMapping;
         
         private void Start()
         {
+            _characterMapping = new CharacterMapping();
             _lines = new Queue<DialogueLine>();
             
             XmlDocument xmlDoc = new XmlDocument();
@@ -30,6 +35,14 @@ namespace DefaultNamespace
                 
                 _lines.Enqueue(new DialogueLine(character, text, isFocused));
             }
+
+            _inputHandler.OnButtonPressed += HandleButtonPressed;
+        }
+
+        private void HandleButtonPressed(object sender, ButtonPressedEventArgs e)
+        {
+            if (e.Button == Buttons.CROSS)
+                NextLine();
         }
 
         private void NextLine()
@@ -41,7 +54,8 @@ namespace DefaultNamespace
             }
         
             DialogueLine line = _lines.Dequeue();
-            _dialogueText.text = $"<b>{line.Name}</b>\n{line.Text}";
+            _nameText.text = _characterMapping.GetCharacterName(line.Name);
+            _dialogueText.text = line.Text;
         }
         
         

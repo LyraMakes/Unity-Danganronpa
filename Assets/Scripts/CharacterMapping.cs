@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Xml;
+using UnityEngine;
 
 public class CharacterMapping
 {
@@ -20,10 +21,11 @@ public class CharacterMapping
             if (node.Attributes == null) continue;
             
             string id = node.Attributes["id"].Value;
-            string name = node.Attributes["value"].Value;
+            string name = node.InnerText;
             _dictionary.Add(id, new Character(id, name));
         }
     }
     
     public Character GetCharacter(string id) => _dictionary.ContainsKey(id) ? _dictionary[id] : null;
+    public string GetCharacterName(string id) => _dictionary.ContainsKey(id) ? _dictionary[id].GetName() : null;
 }
