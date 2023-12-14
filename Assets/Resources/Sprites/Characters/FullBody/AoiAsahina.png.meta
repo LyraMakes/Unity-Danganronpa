@@ -158,7 +158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AoiAsahina_2
+      name: CH-15-speaking
       rect:
         serializedVersion: 2
         x: 1054
@@ -305,7 +305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AoiAsahina_9
+      name: CH-15-thinking
       rect:
         serializedVersion: 2
         x: 2098
@@ -681,7 +681,6 @@ TextureImporter:
       AoiAsahina_11: -703669444
       AoiAsahina_21: 814316939
       CH-15-Idle: 646182052
-      AoiAsahina_2: 552954456
       AoiAsahina_17: 1675707575
       AoiAsahina_10: 3200581
       AoiAsahina_24: -527187928
@@ -695,10 +694,11 @@ TextureImporter:
       AoiAsahina_22: 639901007
       AoiAsahina_20: 1618239089
       AoiAsahina_26: -1744679557
-      AoiAsahina_9: -669727306
-      AoiAsahina_29: 122468176
       AoiAsahina_23: 1839443315
+      AoiAsahina_29: 122468176
+      CH-15-speaking: 552954456
       AoiAsahina_25: 63801545
+      CH-15-thinking: -669727306
       AoiAsahina_15: 881436339
       AoiAsahina_18: -1814641501
       AoiAsahina_13: -566135860

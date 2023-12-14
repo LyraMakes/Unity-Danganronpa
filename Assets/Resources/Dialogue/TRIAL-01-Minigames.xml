@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minigames>
+    <minigame type="Nonstop Debate" id="ODR1_NSD-01-01">
+        <settings music="dr1_break" time="04:00:00"/>
+        <section id="ODR1_NSD-01-01_Content">
+            <text character="CH-10" expression="force" yell="true">I assert the the one who was\nmurdered was Miss Sayaka Maizono!</text>
+            <text character="CH-01" expression="tired">...Yeah, we know that part already.</text>
+            <text character="CH-03" expression="think">And the murder took place in\nMakoto's room.</text>
+            <text character="CH-15" expression="think">In the bathroom...</text>
+            <text character="CH-02" expression="think">So it seems most likely that...</text>
+            <text character="CH-02" expression="idle">The killer must have taken her by\nsurprise while she was in the bathroom.</text>
+            <text character="CH-02" expression="crying">She <weak type="argue" bullet="" target="ODR1_T1_Part2">didn't even have a chance to resist</weak>...</text>
+        </section>
+        <section id="ODR1_NSD-01-01_Loop">
+            <text character="CH-08" expression="think" think="true">Huh? There's something odd about that last statement.\nIt definitely contradicts what I already know...</text>
+        </section>
+    </minigame>
+    <minigame type="Nonstop Debate" id="ODR1_NSD-01-02">
+        <settings music="dr1_break" time="04:00:00"/>
+        <section id="ODR1_NSD-01-02_Content">
+            <text character="CH-12" expression="idle">So what was used to kill her?</text>
+            <text character="CH-10" expression="think">There was some kind of sharp\nobject thrust into her stomach...</text>
+            <text character="CH-10" expression="force" yell="true">Without a doubt, that is the murder weapon!</text>
+            <text character="CH-14" expression="angry">So the killer used <weak type="argue" bullet="" target="ODR1_T1_Part3">some random knife</weak> they had on 'em...</text>
+            <text character="CH-14" expression="angry" yell="true">How could anyone do something\nlike that? That son of a bitch!</text>
+        </section>
+        <section id="ODR1_NSD-01-02_Loop">
+            <text character="CH-08" expression="think" think="true">Hold on... I feel liek what I just heard is different\nfrom what I already know...</text>
+        </section>
+    </minigame>
+</minigames>

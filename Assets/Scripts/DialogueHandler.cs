@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Xml;
 using TMPro;
@@ -32,9 +33,15 @@ namespace DefaultNamespace
                 string character = node.Attributes["character"].Value;
                 string expression = node.Attributes["expression"].Value;
                 string text = node.InnerText;
-                bool isFocused = node.Attributes["focus"] != null;
+
+
+                XmlAttribute nameAttr = node.Attributes["hide-name"];
+                bool showName = nameAttr is null || nameAttr.Value.ToLower().Equals("false");
+
+                XmlAttribute focusAttr = node.Attributes["focus"];
+                bool isFocused = focusAttr is not null && focusAttr.Value.ToLower().Equals("true");
                 
-                _lines.Enqueue(new DialogueLine(character, text, expression, isFocused));
+                _lines.Enqueue(new DialogueLine(character, text, expression, showName, isFocused));
             }
 
             _inputHandler.OnButtonPressed += HandleButtonPressed;
@@ -53,13 +60,21 @@ namespace DefaultNamespace
                 Debug.Log("End of dialogue");
                 return;
             }
-        
+
             DialogueLine line = _lines.Dequeue();
-            _nameText.text = _characterMapping.GetCharacterName(line.Name);
-            _circleController.SetExpression(line.Name, line.Expression);
+            // Set Text
+            _nameText.text = (line.ShowName) ? _characterMapping.GetCharacterName(line.Name) : "";
             _dialogueText.text = line.Text;
+
+            // Set Expression / Effects
+
+            if (line.Focus)
+            {
+                _circleController.SetExpression(line.Name, line.Expression);
+                _circleController.SetFocusTarget(line.Name);
+            }
         }
-        
-        
+
+
     }
 }

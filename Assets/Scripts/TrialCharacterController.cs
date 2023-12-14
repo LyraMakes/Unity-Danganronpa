@@ -11,24 +11,31 @@ public class TrialCharacterController : MonoBehaviour
     private string _id;
     private Character _character;
 
+    public float FocusAngle { get; private set; }
+
     /// <summary>
     /// Initializes the character controller.
     /// Must be called before using the controller.
     /// </summary>
     /// <param name="id">Character ID</param>
-    public void Initialize(string id)
+    /// <param name="angle">Focus Angle for Camera</param>
+    public void Initialize(string id, float angle)
     {
+        FocusAngle = angle;
+        
         _characterMapping ??= CharacterMapping.Instance;
-        Debug.Log($"Got character mapping{_characterMapping is null}");
+        Debug.Log("Got character mapping");
         _id = id;
         _character = _characterMapping.GetCharacter(id);
         Debug.Log($"Initialized with Character: {_character.GetName()}");
-        //SetExpression("idle");
+        
+        
+        //TrySetExpression("idle");
     }
     
-    public void SetExpression(string expression)
+    public void TrySetExpression(string expression)
     {
-        _spriteRenderer.sprite = _character.GetSprite($"{_id}-{expression}");
+        _spriteRenderer.sprite = _character.GetSprite(expression);
     }
     
     

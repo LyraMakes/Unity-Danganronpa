@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dialogue>
+    <section id="ODR1_T1_Start">
+        <music track="dr1_trialDawn"/>
+        <text character="CH-18" expression="idle" focus="true">Let's begin with a basic explanation of the class\nTrial! So, your votes will determine the results.</text>
+        <text character="CH-18" expression="idle" focus="true">If you can figure out "whodunnit" then only they will\nrecieve punishment. But if you pick the wrong one...</text>
+        <text character="CH-18" expression="idle" focus="true">...then I'll punish everyone *besides* the blackened,\nand the one that decieved everyone else will graduate!</text>
+        <text character="CH-08" expression="idle" focus="true">And the killer really is one of us, right?</text>
+        <text character="CH-18" expression="happy" focus="true">Of course!</text>
+        <sound effect="explosion"/>
+        <text character="CH-10" expression="yelling" focus="true">Okay then...everyone close your eyes, and whoever did it\nit, raise your hand!</text>
+        <text character="CH-14" expression="angry" focus="true"> Don't be a goddamn idiot. Why the hell would they\nraise their hand?</text>
+        <sound effect="ding"/>
+        <text character="CH-14" expression="idle" focus="true">Before we move on and start the trial, can I ask a\nquestion real quick?</text>
+        <!-- Cut to the Sayaka and Mukuro Death Portraits -->
+        <text character="CH-14" expression="idle" focus="false">What's going on with...those pictures?</text>
+        <text character="CH-18" expression="idle" focus="false">I'd feel awful if they got left out just because they\ndied. Friendship penetrates even death's barrier!</text>
+        <sound effect="drop"/>
+        <text character="CH-07" expression="shocked" focus="true">Friendship...penetrates?</text>
+        <sound effect="ding"/>
+        <text character="CH-04" expression="idle2" focus="true">Okay, but what about that other empty seat?</text>
+        <!-- Text is *sightly* delayed -->
+        <text character="CH-04" expression="idle2" focus="false">There were only fifteen of us to begin with, so why\nare there sixteen seats?</text>
+        <text character="CH-18" expression="idle" focus="true">Oh, no reason. It's just that our little courtroom\nhere can technically fit up to sixteen people.</text>
+        <text character="CH-18" expression="happy" focus="true">Okay, that about does it for the preamble. Get ready\nto get started!</text>
+        <text character="CH-18" expression="idle" focus="true">First up is the case summary. Now, let the class trial...begin!</text>
+        <text character="CH-08" expression="idle" focus="true">It's about to begin-the debase to decide who we think\nthe killer is...</text>
+        <text character="CH-08" expression="idle" focus="true">Anything I found, anything I noticed... I have to be\nready to speak up about everything.</text>
+        <text character="CH-08" expression="idle" focus="true">Because this isn't just about me. Everyone's lives are\non the line!</text>
+        <!-- Narrator line still has Makoto's portrait -->
+        <text character="CH-20" expression="idle" focus="false">Your first Nonstop Debate is about to begin. Would you like to hear more?</text>
+        <makechoice id="ODR1_T1_NSDTutorialOption"/>
+    </section>
+    <!-- <options>
+        <option>Not at all!</option>
+        <option>Absolutely</option>
+    </options>
+    -->
+    
+    <choice id="0DR1_T1_NSDTutorialOption">
+        <option target="0DR1_T1_NSDTutorialNo">Not at all!</option>
+        <option target="0DR1_T1_NSDTutorialYes">Absolutely!</option>
+    </choice>
+    
+    <!-- Not at all! -->
+    <!-- Load NSD-01-01 -->
+    <section id="0DR1_T1_NSDTutorialNo">
+        <minigame id="ODR1_NSD-01-01"/>
+    </section>
+    
+    <!-- Absolutely! -->
+    <section id="0DR1_T1_NSDTutorialYes">
+        <text character="CH-20" expression="idle" focus="false">As things progress during each class trial, you will\nengange in a number of Nonstop Debates.</text>
+        <text character="CH-20" expression="idle" focus="false">During these discussions, characteres will speak one\nafter another, without pause.</text> 
+        <text character="CH-20" expression="idle" focus="false">It's up to you to uneatch any lies or contradictions\nburied within their statements.</text>
+        <text character="CH-20" expression="idle" focus="false">What this means is that you'll have to use your Truth\nBullets to refure what they say.</text>
+        <text character="CH-20" expression="idle" focus="false">Any relevant Truth Bullets you've found during your\ninvestigation will be loaded into the Truth Cylinder.</text>
+        <text character="CH-20" expression="idle" focus="false">Use the left stick to aim, then fire with\nthe (Y) button</text>
+        <text character="CH-20" expression="idle" focus="false">...</text>
+        <text character="CH-20" expression="idle" focus="false">Pay chose attention to each character's statements,\nand use your Truth Bullets to blast the right ones.</text>
+        <text character="CH-20" expression="idle" focus="false">Note that if you run out of time, you will\nautomatically fail, so please be careful!</text>
+        <text character="CH-20" expression="idle" focus="false">If you press the START button during these\narguments you can review the controls.</text>
+        <text character="CH-20" expression="idle" focus="false">Well then...good luck, and have fun!</text>
+        <minigame id="ODR1_NSD-01-01"/>
+    </section>
+    
+    <section id="ODR1_T1_Part2">
+        <music track="dr1_trialSolar"/>
+        <text character="CH-08" expression="idle" focus="true">Just a second, Chihiro. Try to remember <b>how my room\nlooked</b>...</text>
+        <!-- Bg flash to Makoto's damaged room -->
+        <!-- Makoto: With the way things had been damaged, I think we can\ndefinitely assume there was a struggle.-->
+        <!-- Bg flash back to trial -->
+        <text character="CH-02" expression="worried" focus="true">A struggle? Between who...and who?</text>
+        <text character="CH-08" expression="idle" focus="true">Between Sayaka and the killer, of course.</text>
+        <text character="CH-02" expression="idle" focus="true">So you're saying...Sayaka wasn't caught by surprise in\nthe bathroom?</text>
+        <text character="CH-04" expression="think" focus="true">She must have been attacked in the main room first,\nthen she ran to the bathroom to try and hide.</text>
+        <text character="CH-04" expression="think" focus="true">The killer followed her in, and that's where they\nfinished the job...</text>
+        <sound effect="crash"/>
+        <text character="CH-03" expression="idle" focus="true">That much should have been obvious after taking one\nlook at the scene. It shouldn't even need explaining.</text>
+        <text character="CH-02" expression="crying" focus="true">S-Sorry...</text>
+        <music track="dr1_trialDawn"/>
+        <text character="CH-01" expression="worried" focus="true">...Okay, so what's next?</text>
+        <text character="CH-12" expression="idle" focus="true">Next is the subject of the murder weapon.</text>
+        <text character="CH-07" expression="worried" focus="true">Wow...this is starting to sound like a real trial!</text>
+        <text character="CH-08" expression="worried" focus="true" think="true">We need to determine what was used to kill Sayaka!</text>
+        <minigame id="ODR1_NSD-01-02"/>
+    </section>
+
+    <section id="ODR1_T1_Part3">
+        <music track="dr1_trialSolar"/>
+        <text character="CH-08" expression="idle" focus="true">No. I do think it was a knife - but not just any knife.\nI'm almost positive it was a <b>kitchen knife</b>.</text>
+        <text character="CH-14" expression="worried" focus="true">Huh? A kitchen knife...?</text>
+        <text character="CH-08" expression="thinktalk" focus="true">After the murder, we discovered that one if the knives\nfrom the kitchen was missing.</text>
+        <text character="CH-12" expression="think" focus="true">Which means that knife must be the murder weapon.</text>
+        <text character="CH-14" expression="embarassed" focus="true">Ohh...yeah, I guess that makes sense. You could sorta\nsee the weapon stickin' out of her stomach...</text>
+        <!-- Image popup of knife in Sayaka's body --> 
+        <text character="CH-14" expression="embarassed" focus="true">And if you look real close, I could totally see that\nbeing a kitchen knife.</text>
+        <!-- Image goes away-->
+        <music track="none"/>
+        <text character="CH-05" expression="confused" focus="true">Okay, so the murder weapon was a kitchen knife. But\nwhere does that get us?</text>
+        <music track="dr1_trialSolar"/>
+        <text character="CH-05" expression="crazy" focus="true" yell="true">I mean, we all know Makoto killed her, right?</text>
+        <text character="CH-06" expression="idle" focus="true">That's r-right... <b>Makoto's room</b> was the s-scene ofn\the crime. What more proof do you n-need?</text>
+        <sound effect="drop"/>
+        <text character="CH-08" expression="scared" focus="true" yell="true">H-Hold on a second! I'm-!</text>
+        <text character="CH-13" expression="smile" focus="true">Let's draw our conclusions *after* we've presented our\narguments. Otherwise, what's the point of the trial?</text>
+        <minigame id="ODR1_NSD-01-02"/>
+    </section>
+    
+</dialogue>

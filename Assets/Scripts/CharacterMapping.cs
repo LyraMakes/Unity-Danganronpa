@@ -12,6 +12,8 @@ public class CharacterMapping
 
     public CharacterMapping()
     {
+        SpriteManager spriteManager = new SpriteManager();
+        
         // Read the file and create the dictionary from xml
         _dictionary = new Dictionary<string, Character>();
         XmlDocument doc = new XmlDocument();
@@ -25,7 +27,7 @@ public class CharacterMapping
             
             string id = node.Attributes["id"].Value;
             string name = node.InnerText;
-            _dictionary.Add(id, new Character(id, name));
+            _dictionary.Add(id, new Character(id, name, spriteManager));
         }
         
         Instance ??= this;

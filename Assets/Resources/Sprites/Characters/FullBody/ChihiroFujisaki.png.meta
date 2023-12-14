@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChihiroFujisaki_0
+      name: CH-02-forceful
       rect:
         serializedVersion: 2
         x: 10
@@ -124,7 +124,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +145,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,7 +166,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_3
+      name: CH-02-crying
       rect:
         serializedVersion: 2
         x: 10
@@ -187,7 +187,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,7 +208,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,7 +229,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_6
+      name: CH-02-tears
       rect:
         serializedVersion: 2
         x: 10
@@ -250,7 +250,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_7
+      name: CH-02-upset
       rect:
         serializedVersion: 2
         x: 532
@@ -271,7 +271,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_8
+      name: CH-02-relieved
       rect:
         serializedVersion: 2
         x: 1054
@@ -292,7 +292,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,7 +305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_9
+      name: CH-02-thinking
       rect:
         serializedVersion: 2
         x: 10
@@ -313,7 +313,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,7 +326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_10
+      name: CH-02-thoughtful
       rect:
         serializedVersion: 2
         x: 532
@@ -334,7 +334,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChihiroFujisaki_11
+      name: CH-02-embarrassed
       rect:
         serializedVersion: 2
         x: 1054
@@ -355,7 +355,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,7 +376,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,7 +397,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -418,7 +418,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,7 +439,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -460,7 +460,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,7 +481,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -502,7 +502,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -523,7 +523,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -544,7 +544,7 @@ TextureImporter:
         width: 512
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -569,25 +569,25 @@ TextureImporter:
     nameFileIdTable:
       ChihiroFujisaki_15: -1591007113
       ChihiroFujisaki_17: 1957030596
+      CH-02-tears: 217547825
       ChihiroFujisaki_1: -2035213230
+      CH-02-upset: 2043026490
       ChihiroFujisaki_20: -758106620
       ChihiroFujisaki_5: 1538414659
       ChihiroFujisaki_19: 273343215
       ChihiroFujisaki_16: 2070061518
-      ChihiroFujisaki_7: 2043026490
       ChihiroFujisaki_2: 2009051797
-      ChihiroFujisaki_11: 598318710
       ChihiroFujisaki_13: -582798892
       ChihiroFujisaki_18: -1981481768
-      ChihiroFujisaki_6: 217547825
-      ChihiroFujisaki_3: -43628407
-      ChihiroFujisaki_10: 869006433
+      CH-02-thinking: 1847809593
+      CH-02-crying: -43628407
       ChihiroFujisaki_12: -2090409494
-      ChihiroFujisaki_0: -169742186
+      CH-02-thoughtful: 869006433
+      CH-02-relieved: -1336126819
+      CH-02-embarrassed: 598318710
+      CH-02-forceful: -169742186
       ChihiroFujisaki_4: 772040153
       ChihiroFujisaki_14: -553205622
-      ChihiroFujisaki_9: 1847809593
-      ChihiroFujisaki_8: -1336126819
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

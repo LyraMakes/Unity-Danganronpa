@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BannerTextHandler : MonoBehaviour
 {
-    private const float _leftLimit = -655f;
-    private const float _rightLimit = 900f;
+    private const float _leftLimit = -1400;
+    private const float _rightLimit = 1600;
 
     [SerializeField] private RectTransform[] bannerText;
     [SerializeField] private float scrollSpeed = 0.5f;
